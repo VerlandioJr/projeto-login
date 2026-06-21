@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                foto
+                <!-- Aqui vai a imagem no CSS-->
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja Bem-vindo(a) novamente. Faça login para acessar sua conta e fazer configurações no seu ambiente.</p>
                 <form action="login.php" method="post">
+                    <span id="iconlogin" class="material-icons-outlined">person</span>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Seu email" required><br>
+
+                    <span id="password" class="material-icons-outlined">vpn_key</span>
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="Sua senha" required>
                     
+                    <p><input type="submit" value="Enviar" ></p>
+                    <p><input type="submit" value="Esqueci a senha"></p>
                 </form>
             </div>
         </section>
