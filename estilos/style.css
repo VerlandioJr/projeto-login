@@ -14,7 +14,7 @@
 }
 
 body, html{
-    background-color: #5f2c82;
+    background-color: #49a09d;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -23,8 +23,8 @@ body, html{
 
 main{
     position: relative;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 }
 
 section#login{
@@ -39,9 +39,13 @@ section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
+    display: block;
     background: #5f2c82 url(../imagens/pexels-john-7242297.jpg) no-repeat;
     background-size: cover;
     height: 200px;
@@ -50,4 +54,43 @@ section#login > div#imagem{
 section#login > div#formulario{
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+}
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(45, 167, 197);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: #49a09d;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #9dd6d4;
+    color: rgb(17, 117, 109);
+    border: 1px solid #49a09d;
+}
+label{
 }
